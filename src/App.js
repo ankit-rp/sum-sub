@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 
@@ -29,7 +28,7 @@ function App() {
     setNum2(b)
     setAns(a + b)
     setShowAns(false);
-    setEnterAns(null);
+    setEnterAns("");
   }
 
   const nextSub = () => {
@@ -39,7 +38,7 @@ function App() {
     setNum4(b)
     setAns2(a + b)
     setShowAns2(false);
-    setEnterAns2(null);
+    setEnterAns2("");
   }
   useEffect(() => {
     let a = Math.floor(1 + Math.random() * 10000)
@@ -63,7 +62,7 @@ function App() {
     setEnterAns2(e.target.value);
   }
   const handleSubmit = (e) => {
-    if (enterAns == ans) {
+    if (parseInt(enterAns) === parseInt(ans)) {
       setShowAns(true);
       setIsCorrect(true);
       return;
@@ -74,7 +73,7 @@ function App() {
 
   }
   const handleSubmit2 = (e) => {
-    if (enterAns2 == ans2) {
+    if (parseInt(enterAns2) === parseInt(ans2)) {
       setShowAns2(true);
       setIsCorrect2(true);
       return;
