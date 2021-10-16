@@ -36,7 +36,7 @@ function App() {
     let b = Math.floor(1 + Math.random() * a)
     setNum3(a)
     setNum4(b)
-    setAns2(a + b)
+    setAns2(a - b)
     setShowAns2(false);
     setEnterAns2("");
   }
