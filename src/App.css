@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+
+ 
+}
+
+body {
+   background-color: pink
+}
+
+.answer {
+  padding-top: 20px;
 }
 
 .App-logo {
