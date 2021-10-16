@@ -33,7 +33,7 @@ function App() {
 
   const nextSub = () => {
     let a = Math.floor(1 + Math.random() * 10000)
-    let b = Math.floor(1 + Math.random() * 10000)
+    let b = Math.floor(1 + Math.random() * a)
     setNum3(a)
     setNum4(b)
     setAns2(a + b)
